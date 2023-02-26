@@ -19,8 +19,9 @@
 // @include        *://*.yifile.com/*
 // @include        *://*.1988wp.com/*
 // @include        *://rosefile.net/*
-// @include        *://*.xingyaopan.com/*
+// @include        *://*.xywpan.com/*
 // @include        *://*.kufile.net/*
+// @include        *://*.feimaoyun.com/*
 
 // @grant        GM_addStyle
 // @grant        unsafeWindow
@@ -35,9 +36,9 @@
     const htmlDivElement = document.createElement('div');
     htmlDivElement.id = 'link_helper_download'
     htmlDivElement.style.position = 'absolute'
-    htmlDivElement.style.top = '150px'
-    htmlDivElement.style.right = '50%'
-    htmlDivElement.style.width = '350px'
+    htmlDivElement.style.top = '250px'
+    htmlDivElement.style.right = '1%'
+    htmlDivElement.style.width = '250px'
     htmlDivElement.style.height = '150px'
     htmlDivElement.style.display = 'none'
     htmlDivElement.style.border = '1px solid red'
@@ -53,7 +54,7 @@
     htmlButtonElement.innerText = '[LINK-HELPER]获取下载地址'
     htmlButtonElement.style.position = 'absolute'
     htmlButtonElement.style.top = '150px'
-    htmlButtonElement.style.right = '0px'
+    htmlButtonElement.style.right = '40px'
     htmlButtonElement.style.borderRadius = '3%';
     htmlButtonElement.onclick = function (){
         htmlButtonElement.innerText = '[LINK-HELPER]努力解析中'
@@ -73,7 +74,7 @@
     htmlIssuesElement.innerText = '有问题?点我提交issues'
     htmlIssuesElement.style.position = 'absolute'
     htmlIssuesElement.style.top = '200px'
-    htmlIssuesElement.style.right = '0px'
+    htmlIssuesElement.style.right = '40px'
     htmlIssuesElement.style.borderRadius = '3%';
     htmlIssuesElement.onclick = function (){
         window.open('https://github.com/sayokey/link-helper/issues')
@@ -106,7 +107,7 @@
     // action id json,这个id需要抓包获取,我们会提供脚本支持的网盘id,如果你需要增加适配网盘且你不会或者这个id,你可以在github中提交一个issues并说明，我们会协助你。
     // 格式为 key:value key:document.domain,value:action id
     const action_id = {
-        'www.xingyaopan.com':'load_down_addr5',
+        'www.xywpan.com':'load_down_addr5',
         'www.77file.com':'load_down_addr1',
         'www.xunniufile.com':'load_down_addr1',
         'www.567file.com':'load_down_addr10',
